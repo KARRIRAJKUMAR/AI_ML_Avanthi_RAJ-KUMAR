@@ -1,0 +1,66 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOpxIv21jU62U4+OEx/wW48",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/KARRIRAJKUMAR/AI_ML_Avanthi_RAJ-KUMAR/blob/main/20/01/2024\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5uJJZXy_-CzI",
+        "outputId": "b62a6204-a72e-44d4-87da-722493c1e64e"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number: 153\n",
+            "153 is an Armstrong number\n"
+          ]
+        }
+      ],
+      "source": [
+        "\n",
+        "\n",
+        "num = int(input(\"Enter a number: \"))\n",
+        "sum = 0\n",
+        "temp = num\n",
+        "while temp > 0:\n",
+        "   digit = temp % 10\n",
+        "   sum += digit ** 3\n",
+        "   temp //= 10\n",
+        "if num == sum:\n",
+        "   print(num,\"is an Armstrong number\")\n",
+        "else:\n",
+        "   print(num,\"is not an Armstrong number\")"
+      ]
+    }
+  ]
+}
